@@ -1,6 +1,8 @@
-# jezykiSkryptowe
-
-Repozytorium stworzone z myślą o zaliczeniu przedmiotu (1) "Wersjonowanie Aplikacji" oraz (2) "Języki Skryptowe".
-
-	(1) prowadzenie reopozytorium
-	(2) wykonywanie zadań
+# Języki Skryptowe
+Użyte języki: 
+	* HTML
+	* CSS
+	* JavaScript
+	* PHP
+Środowisko: Visual Studio Code
+Czas trwania: 26.02 - 04.06.2021  
