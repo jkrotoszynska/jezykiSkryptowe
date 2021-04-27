@@ -1,8 +1,8 @@
 # Języki Skryptowe
-Użyte języki: 
+Użyte języki:   
 	* HTML
 	* CSS
 	* JavaScript
-	* PHP
-Środowisko: Visual Studio Code
-Czas trwania: 26.02 - 04.06.2021  
+	* PHP  
+Środowisko: Visual Studio Code  
+Czas trwania: 26.02 - 04.06.2021    
