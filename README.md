@@ -1,4 +1,7 @@
 # Języki Skryptowe
+W tym repozytorium znajdują się zadania, dzięki którym zdobędę zaliczenie przedmiotu "Języki Skryptowe - HTML5 i JavaScript".  
+Stworzone w celu nauki.
+***
 Użyte języki:
 * HTML
 * CSS
