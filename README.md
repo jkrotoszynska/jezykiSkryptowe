@@ -7,3 +7,5 @@ Użyte języki:
    
 Środowisko: Visual Studio Code  
 Czas trwania: 26.02 - 04.06.2021  
+
+
