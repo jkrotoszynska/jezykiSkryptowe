@@ -24,5 +24,5 @@ __Czas trwania:__ 26.02 - 04.06.2021
 
 
 
-__Bazowa rozpoczynająca zadania z HTML:__
+__Baza rozpoczynająca zadania z HTML:__
 ![alt text](https://github.com/jkrotoszynska/jezykiSkryptowe/blob/master/przyk.PNG "Przyklad")
