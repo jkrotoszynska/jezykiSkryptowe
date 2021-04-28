@@ -1,15 +1,15 @@
 # Języki Skryptowe
 W tym repozytorium znajdują się zadania, dzięki którym zdobędę zaliczenie przedmiotu "Języki Skryptowe - HTML5 i JavaScript".  
-Stworzone w celu nauki.
+__Stworzone w celu nauki.__
 ***
-Użyte języki:
+__Użyte języki:__
 * HTML
 * CSS
 * JavaScript
 * PHP  
    
-Środowisko: Visual Studio Code  
-Czas trwania: 26.02 - 04.06.2021  
+__Środowisko:__ Visual Studio Code  
+__Czas trwania:__ 26.02 - 04.06.2021  
   
 ***
 ### Spis treści:
