@@ -4,19 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz</title>
-    <script defer src = "doForm.js">
-    </script>
+    <title>Zadanie 3</title>
+    <script defer src = "znaki.js"></script>
+    <script defer src = "tablica.js"></script>
+    <script defer src = "ciag.js"></script>
+    <script defer src = "nwd.js"></script>
 </head>
 <body>
-    <form>
-        <p id="p1">
-        Imię: <input type="text" id="dane1"><br>
-        Nazwisko: <input type="text" id="dane2"><br>
-        E-mail <input type="text" id="email"><br>
+    <div id="dane">
+        <p>
+        1. Utwórz formularz zawierający pola: imię nazwisko, email
+        <br/>
+        a) sprawdzający, czy imię i nazwisko zawiera dozwolone polskie znaki, duże pierwsze litery,
+        <br/>
+        b) adres email jest odpowiednio sformatowany i w przypadku poprawnego wpisania wyświetla poprawne dane na stronie np alert. (może reagować na wciśnięcie przycisku)
         </p>
-        <input type="submit" value="WYŚLIJ" onclick="f()">
+        <form>
+        Imię: <input type="text" id="imie">
+        Nazwisko: <input type="text" id="nazwisko">
+        E-mail <input type="text" id="email">
+        <input type="submit" value="WYŚLIJ" onclick="poprawnosc()">
+        </form>
+
+    </div>
+    <br/>
+
+    <div id="max">
+        <p>
+        2. Pobierz 7 liczb jednocyfrowych z pola tekstowego, zapisz do tablicy 7-elementowej JavaScript, znajdź element największy i wypisz  go na stronie HTML pod polem tekstowym. Użyj Funkcji
+        </p>
+    <form>
+        Liczba: <input type="text" id="siedem">
+        <input type="button" value="SPRAWDŹ" onclick="maksimum()">
     </form>
+    <p id="tab"></p>
+
+    </div> 
+    <br/>
+
+    <div id="fibonacci">
+        <p>
+        3.  Napisz funkcję pobierająca numer elementu ciągu Fibonacciego, obliczający ten element i wypisujący  w przeglądarce
+        </p>
+    <form>
+        Liczba: <input type="text" id="liczba">
+        <input type="button" value="WYŚWIETL" onclick="wFibonacci()">
+    </form>
+    <p id="WynikFibonacciego">Wartość wyrazu w ciągu, o podanym numerze, wynosi: </p>
+    </div>
+    <br/>
+
+    <div id="dzielnik">
+        <p>
+        4. Pobierz 2 liczby całkowite w polach tekstowych formularza i obliczający NWD tych liczb.
+        </p>
+    <form>
+        Liczba 1: <input type="text" id="liczba1">
+        Liczba 2: <input type="text" id="liczba2">
+        <input type="button" value="SPRAWDŹ" onclick="wNWD()">
+    </form>
+    <p id="najwikeszyWspolnyDzielnik"> Największy wspólny dzielnik:
+    </p>
+
+    </div>
 </body>
 </html>
 
