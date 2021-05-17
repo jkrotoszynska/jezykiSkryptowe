@@ -1,0 +1,67 @@
+<!-- Wykorzystaj bibliotekę leaflet nakieruj mapę startową na kampus UG wydział Zarządzania, Centrum dydaktyczne, Wydział Ekonomiczny. Opisz markerami Wydział Zarządzania, Centrum dydaktyczne, Wydział Ekonomiczny. Wokół budynku Policji zastosuj circle z odpowiednim promieniem i opisem. A parking przed budynkiem dydaktycznym podziel na 2 strefy: parking dla studentów, i parking dla pracowników – użyj poligon. (Przycisk na stronie->wyskakujące dodatkowe okno z mapą) -->
+
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Zadanie 4</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>	
+</head>
+<body>
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+	var mymap = L.map('mapid').setView([54.442726, 18.555902], 15);
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+	 L.marker([54.442556, 18.555838]).addTo(mymap)
+	 	.bindPopup("<b>Uniwersytet Gdański</b><br/>Wydział Zarządzania");
+
+	L.marker([54.4448, 18.5531]).addTo(mymap)
+		.bindPopup("<b>Uniwersytet Gdański</b><br/>Centrum Dydaktyczno-Konferencyjne");
+
+	L.marker([54.44512, 18.554873]).addTo(mymap)
+		.bindPopup("<b>Uniwersytet Gdański</b><br/>Wydział Ekonomiczny");
+
+	L.circle([54.444889, 18.557153], 30, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Komenda Miejska Policji w Sopocie");
+
+	L.polygon([
+		[54.445395, 18.552442],
+		[54.44527, 18.552481],
+		[54.445307, 18.552811],
+		[54.445407, 18.552746]
+	]).addTo(mymap).bindPopup("<b>Uniwersytet Gdański</b><br/> Parking dla studentów");
+
+	L.polygon([
+		[54.445078, 18.552514],
+		[54.444987, 18.552557],
+		[54.445045, 18.552968],
+		[54.445133, 18.552911]
+	]).addTo(mymap).bindPopup("<b>Uniwersytet Gdański</b><br/> Parking dla pracowników");
+
+	var popup = L.popup();
+	
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(mymap);
+	}
+	mymap.on('click', onMapClick);
+</script>
+</body>
+</html>
