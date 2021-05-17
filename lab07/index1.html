@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+<body>
+<button id="ala"> alala</button>
+<div id="sla">cos</div>
+<script>
+
+var a=document.querySelector('#sla');
+
+document.querySelector('#ala').addEventListener('click', function() {
+
+var r= new XMLHttpRequest(		//tworzymy nowy obiekt typu XMLHttpRequest,
+//r.open('GET','https://jsonplaceholder.typicode.com/users', true);
+r.open('GET','https://danepubliczne.imgw.pl/api/data/synop', true);
+r.onload=function(){
+
+var data=JSON.parse(r.responseText);
+//document.write(data[0].name);
+//document.write('ala');
+document.write(data[0].id_stacji);
+
+
+};
+
+r.send();
+
+
+});
+</script>
+</body>
+</html>
