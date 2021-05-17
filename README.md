@@ -16,9 +16,9 @@ __Czas trwania:__ 26.02 - 04.06.2021
 * [__laboratorium 1__: podstawy HTML](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab01)
 * [__laboratorium 2__: podstawy CSS](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab02)
 * [__laboratorium 3__: podstawy JavaScript](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab03)
-* __laboratorium 4__: okna przeglądarki, biblioteka leaflet
-* __laboratorium 5__: zdarzenia dla myszki, menu kontekstowe, geolokalizacja
-* __laboratorium 6__: mały projekt: zegar analogowy
+* [__laboratorium 4__: okna przeglądarki, biblioteka leaflet](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab04)
+* [__laboratorium 5__: zdarzenia dla myszki, menu kontekstowe, geolokalizacja](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab05)
+* [__laboratorium 6__: mały projekt: zegar analogowy](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab06)
 ***
   
 
