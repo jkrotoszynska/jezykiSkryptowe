@@ -1,0 +1,89 @@
+<html>
+<head>
+<style type="text/css">
+#right{
+	background-color:lightblue;
+	border:1px solid black;
+	}
+#ala{
+	background-color:lightblue;
+
+}
+#geo{
+	background-color:lightblue;
+
+}
+.menu-context {
+    position: absolute;
+    left:-9999px;
+    top:-9999px;
+    background: #222;
+    color:#fff;
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:300px;
+    padding:10px;
+    border-radius: 4px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
+    font-size:13px;
+}
+.menu-context li {
+    border-bottom:1px solid #444;
+    cursor: pointer;
+}
+.menu-context li a {
+    color:#fff;
+    text-decoration: none;
+    padding:5px 10px;
+    display: block;
+    transition:0.5s all;
+}
+.menu-context li a:hover {
+    background: #F15C5C;
+    color:#fff;
+}
+.menu-context li:last-child {
+    border:0;
+}
+</style>
+</head>
+<body>
+<ul class="menu-context">
+    <li><a href="a.html" id="ala">Element menu 1</a></li>
+    <li><a href="geo.html" id="geo">Element menu 2</a></li>
+    <li><a href="">Element menu 3</a></li>
+    <li><a href="">Element menu 4</a></li>
+</ul>
+<div id="right">
+
+Klinknij tu
+
+</div>
+
+<script type="text/javascript">
+const menu = document.querySelector('.menu-context');
+
+
+function removeMenu() {
+    menu.style.left = '-9999px';
+    menu.style.top = '-9999px';
+}
+
+function rightButton(e) {
+    e.preventDefault();
+
+    if (e.button === 2) {
+        menu.style.left = e.pageX + 10 + 'px';
+        menu.style.top = e.pageY + 10 + 'px';
+    }
+}
+
+
+const block = document.querySelector('#right');
+block.addEventListener('mousedown', rightButton);
+
+</script>
+
+</body>
+</html>

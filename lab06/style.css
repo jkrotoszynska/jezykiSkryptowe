@@ -1,0 +1,48 @@
+.wall {
+    background-image: url('wall.jpg');
+    background-size: cover; /* obrazek rozciągnięty */
+    width: 100%;
+    height: 600px;
+    display: inline-block;/* nie trzeba używć float*/
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid black;
+    margin: 30px auto; /*margines od góry i od dołu*/
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.25);
+   /* background-color: rgba(0,0,0,0.04);*/
+    position: relative; /*pozycja relatywna, może się zmieniać- wskazówki będa się kręcić względem tarczy.*/
+}
+
+.hand {
+    top: 3px;
+    right: 50%;/* środek tarczy - przodka*/
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+    position: absolute;/* pozycjonowanie wskazówek względem elementów przodka*/
+    transform-origin: bottom center; /*punkt obrotu na środek dolnej krawedzi wskazówki*/
+}
+.hand.minutes, 
+.hand.seconds {
+    height: calc(50% - 3px); /*wysokość wskazówki*/
+    background-color: black;
+
+}
+
+.hand.seconds {
+    width: 1px;
+}
+
+.hand.minutes {
+    width: 3px;
+
+}
+
+.hand.hours{
+    top: 20%;
+    width: 4px;
+    height: 30%; /*wysokość wskazówki*/
+    background-color: red;
+}
