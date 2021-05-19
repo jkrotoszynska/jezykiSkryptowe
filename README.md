@@ -19,7 +19,7 @@ __Czas trwania:__ 26.02 - 04.06.2021
 * [__laboratorium 4__: okna przeglądarki, biblioteka leaflet](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab04)
 * [__laboratorium 5__: zdarzenia dla myszki, menu kontekstowe, geolokalizacja](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab05)
 * [__laboratorium 6__: mały projekt: zegar analogowy](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab06)
-* [__laboratorium 7_: Ajax - XMLHttpRequest()](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab07)
+* [__laboratorium 7__: Ajax - XMLHttpRequest()](https://github.com/jkrotoszynska/jezykiSkryptowe/tree/master/lab07)
 ***
   
 
