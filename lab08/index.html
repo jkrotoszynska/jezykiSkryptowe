@@ -6,21 +6,20 @@
   </head>
   <body>
     <!-- 1 -->
-    <div id="pierwszy">To jest zadanie pierwsze</div>
+    <div id="pierwszy">CZASAMI ZNIKAM</div>
     <script type="text/javascript">
       $("#pierwszy")
-        .css({ background: "blue" })
+        .css({ background: "pink" })
         .delay(2000)
         .slideUp()
         .delay(1000)
         .fadeIn(1000);
     </script>
-
+    <br />
     <!-- 2 -->
     <div class="testAnim">
-      <button id="testAnim" type="button">KLIK!</button>
+      <button id="testAnim" type="button">POWIĘKSZ MNIE!</button>
     </div>
-
     <script type="text/javascript">
       $("#testAnim").on("click", function () {
         $(this).animate(
@@ -34,7 +33,7 @@
         );
       });
     </script>
-
+    <br />
     <!-- 3 -->
     <div
       id="testAnim6"
@@ -46,7 +45,7 @@
         font-family: Arial;
       "
     >
-      TO JEST ZADANIE 3
+      ROZSZERZ MNIE!
     </div>
     <script type="text/javascript">
       $("#testAnim6").on({
@@ -58,12 +57,20 @@
         },
       });
     </script>
+    <br />
     <!-- 4 -->
-
-    <!-- 5 -->
-    <button class="test-ajax" type="button">
-      Kliknij i zobacz w konsoli debugera
+    <button class="test" id="testAnim4" type="button">
+      MOŻESZ MNIE CAŁY CZAS ROZSZERZAĆ!
     </button>
+    <script type="text/javascript">
+      $("#testAnim4").on("click", function () {
+        $(this).animate({ width: "+=" + 150}, 2000);
+      });
+    </script>
+    <br />
+    <br />
+    <!-- 5 -->
+    <button class="test-ajax" type="button">KLIKNIJ MNIE!</button>
     <ul class="user-list"></ul>
     <script type="text/javascript">
       const apiUrl = "https://jsonplaceholder.typicode.com";
@@ -72,18 +79,13 @@
       $(".test-ajax").on("click", function () {
         const $btn = $(this);
 
-        //wykonujemy połączenie
         $.ajax({
           url: apiUrl + "/users",
           dataType: "json",
         })
           .done((res) => {
-            //czyścimy listę przed dodaniem użytkowników
-            //inaczej ponowne kliknięcie duplikowało by użytkowników na liście
             $list.empty();
 
-            //robimy pętlę po zwróconej tablicy
-            //dołączając do listy kolejne LI z imieniem i emailem użytkownika
             res.forEach((el) => {
               $list.append(
                 `<li>${el.address.geo.lat} : ${el.address.geo.lng}</li>`
@@ -91,8 +93,6 @@
             });
           })
           .always(() => {
-            //po zakończeniu wczytywania wyłączamy loading
-            //i włączamy przycisk
             $btn.removeClass("loading");
             $btn.prop("disabled", false);
           });
