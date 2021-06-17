@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Zadanie 3</title>
+  </head>
+  <body>
+    <div
+      id="testAnim6"
+      style="
+        background-color: pink;
+        width: 200px;
+        height: 100px;
+        font-weight: bold;
+        font-family: Arial;
+      "
+    >
+      TO JEST ZADANIE 3
+    </div>
+    <script type="text/javascript">
+      $("#testAnim6").on({
+        mouseover: function () {
+          $(this).stop().animate({ width: 1000 }, 500);
+        },
+        mouseout: function () {
+          $(this).stop().animate({ width: 100 }, 500);
+        },
+      });
+    </script>
+  </body>
+</html>
