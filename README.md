@@ -6,7 +6,6 @@ __Użyte języki:__
 * HTML
 * CSS
 * JavaScript
-* PHP  
    
 __Środowisko:__ Visual Studio Code  
 __Czas trwania:__ 26.02 - 04.06.2021  
